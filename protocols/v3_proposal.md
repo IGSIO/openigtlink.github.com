@@ -14,8 +14,8 @@ Since the release of version 2 protocol, we have learned that the protocol has s
 
 ## Overview of Version 3 Proposal
 
-At [Winter Project Week 2016](http://wiki.na-mic.org/Wiki/index.php/2016_Winter_Project_Week/Projects/TrackedUltrasoundStandardization) (January 5-9, 2016, Cambridge, MA), we discussed the limitations above, and potential extension to the existing protocols _with backward compatibility_. 
-At [Summer Project Week 2016](http://www.na-mic.org/Wiki/index.php/2016_Summer_Project_Week/Tracked_Ultrasound_Standardization) (June 20-26, 2016, Heidelberg, DE) The following changes were proposed:
+At [Winter Project Week 2016](http://wiki.na-mic.org/Wiki/index.php/2016_Winter_Project_Week/Projects/TrackedUltrasoundStandardization) (January 5-9, 2016, Cambridge, MA), we discussed the limitations above, and potential extension to the existing protocols _with backward compatibility_ and developed a prototype description. 
+At [Summer Project Week 2016](http://www.na-mic.org/Wiki/index.php/2016_Summer_Project_Week/Tracked_Ultrasound_Standardization) (June 20-26, 2016, Heidelberg, DE) the following changes were proposed:
 
 * A new message structure. The body in the former protocol has been divided into four parts: extended header, content, meta data header, and meta data. The message now consists of the following sections:
   * Header (58 bytes)
