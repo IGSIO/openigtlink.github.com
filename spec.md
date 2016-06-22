@@ -7,7 +7,7 @@ group: navigation
 ---
 {% include JB/setup %}
 
-*We launched discussion on extended protocol. Please visit [Version 3 Proposal page](protocols/v3_proposal.html).*
+*Please visit [Version 3 Proposal page](protocols/v3_proposal.html) for Version 3 development.*
 
 ## OpenIGTLink Version 2 Summary
 * The header format will not be changed. 
@@ -22,7 +22,7 @@ group: navigation
 * The OpenIGTLink protocol is stateless.
 
 ## Architecture and Header 
-* [OpenIGTLink Header](protocols/v2_header.html)
+* [OpenIGTLink Header](protocols/v2_header.md)
 
 ## Proposed Message Types
 
