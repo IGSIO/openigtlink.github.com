@@ -81,7 +81,14 @@ A handshaking mechanism is needed to negotiate the version capabilities of clien
 
 An example:
 Server is v3, client is v3.
-Client sends v3 COMMAND message with command name "Version"
+Client sends v3 COMMAND message with command name "Version".
+Server recognizes COMMAND message "Version" and responds with v3 RTS_COMMAND message "Version"
+
+Another example:
+Server is v1, client is v3
+Client sends v3 COMMAND message with command name "Version".
+Server drops v3 message as it does not know how to handle it.
+Client times out waiting for response, knows it is dealing with a v1/v2 server.
 
 ## Messaging Format
 
