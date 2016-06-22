@@ -336,6 +336,13 @@ CP50220 | 2260
 
 * The _meta\_data_ section contains pairs of `key` and `value` strings. Keys are ASCII string, while values can be stored using different encodings.
 
+## Protocol changes
+A handshaking mechanism is needed to negotiate the version capabilities of client and server during a connection. Towards this end, server implementing any OpenIGTLink protocol version greater than 3 will respond to command messages with the server's current OpenIGTLink protocol version that is implemented.
+
+An example:
+Server is v3, client is v3.
+Client sends v3 COMMAND message with command name "Version"
+
 ## Messaging Format
 
 ### Overall Message Format
@@ -395,6 +402,9 @@ The format of the contents section is message-dependent. Please see individual m
 Message Type | GET query | STT query | STP query | RTS message | Description
 -------------|-----------|-----------|-----------|-------------|------------
 COMMAND      | --        | --        | --        | RTS_COMMAND | Send a command and receive a response
+
+### COMMAND
+Commands are described as an XML structure in the content part of a message. The name of a command is sent in the meta data with the key "Name".
 
 ## Acknowledgement
 
